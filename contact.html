@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Contact | Julian H.</title>
 </head>
-<body>
+<body id="contact">
   <!-- navbar -->
   <header>
         <div class="navbar">
@@ -18,17 +18,25 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li class="active"><a href="contact.html">Contact</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                   </ul>
                 </div>
             </nav>
         </div>
     </header>
-
     <div class="container main-container">
 
-
+        <h1>Contact</h1>
+        <hr>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Email">
+            <label for="message">Message:</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
 
     </div>
     
@@ -37,7 +45,7 @@
     <footer>
             <div class="footer">
                     <div class="footer-wrapper">
-                        <div class="container">
+                        <div class="footer-container">
                             <p>Julian | Copyright &copy 
                                 <script type="text/JavaScript">
                                 document.write(new Date().getFullYear())
