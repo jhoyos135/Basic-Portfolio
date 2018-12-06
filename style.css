@@ -88,8 +88,9 @@ button {
     background: #4aaaa5;
     color: #fff;
     box-shadow: none;
+    width: 100%;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     cursor: pointer;
 }
 button:hover {
@@ -97,7 +98,6 @@ button:hover {
     color: #4aaaa5;
     box-shadow: none;
     border: none;
-    padding: 5px 10px;
     transition: 0.2s all ease-in-out;
     cursor: pointer;
 }
@@ -191,6 +191,7 @@ nav .container {
     margin: 60px auto 60px auto;
     padding: 15px;
 }
+
 #contact .main-container {
     align-content: center;
     max-width: 960px;
@@ -250,6 +251,21 @@ nav .container {
     content: '';
     display: block;
     clear: both;
+}
+.about_h3 {
+    float: left;
+    font-weight: bold;
+    transform: rotate(180deg) transform;
+    writing-mode: vertical-lr;
+    margin-right: 25px;
+    transform: translateY(50%) rotate(180deg);
+    margin-top: -15px;
+
+}
+
+.about_p {
+    text-align: justify;
+    columns: 2;
 }
 
 /*===== PORTFOLIO =====*/
@@ -311,7 +327,6 @@ footer {
     box-shadow: -2px -2px 10px rgba(0,0,0,0.2);
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
-
 }
 
 footer p {
@@ -322,6 +337,11 @@ footer p {
 
 /*===== MEDIA =====*/
 @media all and (min-width: 450px) and (max-width:750px) {
+    
+    .about_p {
+        text-align: justify;
+        columns: 1;
+    }
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2,1fr);
